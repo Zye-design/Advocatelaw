@@ -891,7 +891,52 @@ margin-bottom: 1.5em;
 /*-----------------------------------*\
             MEDIA QUERIES
   \*-----------------------------------*/
+ /**
+   * responsive for larger than 992px screen
+   */
+ @media (max-width: 1288px){
+    .header-container{
+      width: 100vw;
+      position: fixed;
+     }
 
+     .main-header{
+      padding: 28px .5em;
+      margin-top: 1em;
+   
+    }
+    
+    
+
+    .logo .logo-text{
+      color: var(--cool-brown);
+      text-align: start;
+      
+    }
+    
+    
+    .header-actions{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    
+    
+    .header-contact .contact-time {
+    border: 2px solid var(--cool-brown);
+    border-radius: var(--radius-14);
+    padding:.4em .5em;
+    margin-left: 1em;
+    }
+    
+    .header-contact .contact-time:is(:hover, :focus){
+      background: transparent;
+      letter-spacing: 0;
+      border: 2px solid var(--cool-brown);
+    }
+   
+
+  }
 
  /**
    * responsive for larger than 768px screen
